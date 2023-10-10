@@ -296,9 +296,81 @@
 
 			<main class="content" id="lqd-site-content">
 				<div id="lqd-contents-wrap">
+					<!-- Accordion starts -->
+					<div class="accordion-wrapper">
+  
+						<div class="accordion-container">
+						  <div class="question">
+							What sets RocketSocialBoost apart from other services?
+						  </div>
+						  <div class="answercont">
+							<div class="answer">
+								RocketSocialBoost distinguishes itself by employing entirely organic methods. This means we focus on driving genuine traffic to your page, ensuring your satisfaction with our services.
+					  
+					  Or, send an email with the subject "Verify" to verify@codepen.io from the email address you use for your CodePen account.<br><br>
+					  
+					
+							</div>
+						  </div>
+						</div>
+						
+						  <div class="accordion-container">
+						  <div class="question">
+							What services does RocketSocialBoost offer to enhance social presence?
+						  </div>
+						  <div class="answercont">
+							<div class="answer">
+								RocketSocialBoost covers a wide range of social media needs. We provide various packages tailored to either kickstart your presence or take it to the next level. Our offerings include multiple social media packages, genuine and organic services, and top-notch customer support.<br><br>
+					  
+					 
+							</div>
+						  </div>
+						</div>
+						
+							<div class="accordion-container">
+						  <div class="question">
+							How does RocketSocialBoost ensure the growth of my Instagram platform?
+						  </div>
+						  <div class="answercont">
+							<div class="answer">
+								RocketSocialBoost employs entirely organic methods, which means we focus on driving genuine traffic to your page. This ensures that your Instagram platform experiences natural and sustainable growth. Our services are designed to boost your page in a way that you can be genuinely satisfied with the results.<br><br>
+							</div>
+						  </div>
+						</div>
+					   
+						<div class="accordion-container">
+						  <div class="question">
+							What version of [library] does CodePen use?
+						  </div>
+						  <div class="answercont">
+							<div class="answer">
+							  We have our current list of library versions <a href="https://codepen.io/versions">here</a>
+						 
+							</div>
+						  </div>
+						</div>
+						
+						<div class="accordion-container">
+						  <div class="question">
+							What are forks?
+						  </div>
+						  <div class="answercont">
+							<div class="answer">
+							  A fork is a complete copy of a Pen or Project that you can save to your own account and modify. Your forked copy comes with everything the original author wrote, including all of the code and any dependencies.<br><br>
+					  
+					  <a href="https://blog.codepen.io/documentation/features/forks/">Learn More About Forks</a>
+							</div>
+						  </div>
+						</div>
+						
+					  </div>
+					<!-- Accordion ends -->
+
+
+
 
 					<!-- Start Form -->
-					<div class="faq">
+					<!-- <div class="faq">
 						<div class="faq-item">
 							<input type="checkbox" class="faq-toggle" id="faq1">
 							<label class="question" for="faq1">What sets RocketSocialBoost apart from other services?
@@ -323,8 +395,8 @@
 								<p>RocketSocialBoost employs entirely organic methods, which means we focus on driving genuine traffic to your page. This ensures that your Instagram platform experiences natural and sustainable growth. Our services are designed to boost your page in a way that you can be genuinely satisfied with the results.</p>
 							</div>
 						</div>
-					</div>
-					</div>
+					</div> -->
+				</div>
 					<!-- End Form -->
                    
 
@@ -691,7 +763,27 @@
 		<script src="./assets/js/theme.min.js"></script>
 		<script src="./assets/js/liquid-ajax-contact-form.min.js"></script>
 		<script src="./assets/js/search-input.js"></script>
+		<script>
+			let question = document.querySelectorAll(".question");
 
+question.forEach(question => {
+  question.addEventListener("click", event => {
+    const active = document.querySelector(".question.active");
+    if(active && active !== question ) {
+      active.classList.toggle("active");
+      active.nextElementSibling.style.maxHeight = 0;
+    }
+    question.classList.toggle("active");
+    const answer = question.nextElementSibling;
+    if(question.classList.contains("active")){
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    } else {
+      answer.style.maxHeight = 0;
+    }
+  })
+})
+
+		</script>
 
 		<!-- Start custom cursor -->
 		<div class="lqd-cc lqd-cc--inner fixed pointer-events-none"></div>
