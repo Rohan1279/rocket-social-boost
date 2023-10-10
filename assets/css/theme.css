@@ -29931,7 +29931,9 @@ nav.post-nav .nav-next .nav-subtitle svg {
   margin-bottom: 150px;
   opacity: 0;
   transform: translateY(20px);
-  animation: fade-in 0.5s ease-in-out forwards;
+  /* animation: fade-in 0.5s ease-in-out forwards; */
+  animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
 }
 
 /* Styles for mobile view */
@@ -29943,7 +29945,7 @@ nav.post-nav .nav-next .nav-subtitle svg {
 }
 
 .faq-item {
-  border: 1px solid #ccc;
+  border: 1px solid var(--lqd-color-blue-200);
   margin-bottom: 10px;
 }
 
@@ -29977,6 +29979,19 @@ nav.post-nav .nav-next .nav-subtitle svg {
   opacity: 1;
   transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
   animation: fade-in 0.5s ease-in-out;
+
+}
+@keyframes swing-in-top-fwd {
+  0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
 }
 
 @keyframes fade-in {
