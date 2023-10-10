@@ -29906,7 +29906,7 @@ nav.post-nav .nav-next .nav-subtitle svg {
 }
 
 /* About Section Grid */
-.iconbox-icon-container:hover {
+.iconbox-icon-container {
   --float-animation-ease: ease;
   --float-animate-from: 0%;
   --float-animate-to: 7%;
@@ -29948,8 +29948,8 @@ nav.post-nav .nav-next .nav-subtitle svg {
   transition: all 0.3s ease-in-out;
 }
 .question {
-  font-size: 1.2rem;
-  font-weight: 600;
+  /* font-size: 1.2rem; */
+  /* font-weight: 600; */
   padding: 20px 80px 20px 20px;
   position: relative;
   display: flex;
@@ -29959,7 +29959,7 @@ nav.post-nav .nav-next .nav-subtitle svg {
 
 .question::after {
   content: "\002B";
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
   position: absolute;
   right: 20px;
   transition: 0.2s;
