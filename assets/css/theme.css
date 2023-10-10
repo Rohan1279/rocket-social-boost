@@ -30086,8 +30086,13 @@ nav.post-nav .nav-next .nav-subtitle svg {
   padding: 20px;
   transition: box-shadow 0.3s ease-in-out;
   text-align: center; 
+  /* opacity: 1; */
+  /* transition: opacity 0.5s ease-in-out; */
 }
+/* .card.animate{
+  animation: swing-in-top-bck 0.5s ease-in-out;
 
+} */
 .card h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
@@ -30108,6 +30113,7 @@ nav.post-nav .nav-next .nav-subtitle svg {
       width: 100%;
   }
 }
+/* Cards */
 
 /* Services */
 .services {
