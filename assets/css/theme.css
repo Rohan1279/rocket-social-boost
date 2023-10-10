@@ -29978,6 +29978,9 @@ nav.post-nav .nav-next .nav-subtitle svg {
 .answer {
   padding: 0 20px 20px;
   line-height: 1.5rem;
+  color: var(--lqd-body-text-color);
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: var(--lqd-body-letter-spacing);
 }
 
 .question.active + .answercont {
