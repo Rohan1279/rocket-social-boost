@@ -25,6 +25,13 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Nunito:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
 
+		<!-- React CDN -->
+		<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+		<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+		<!-- Babel CDN -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
 		<title>Advanced Services - RocketSocialBoost™</title>
 	</head>
 
@@ -517,7 +524,7 @@
                             <div class="mt-200 mb-220 ">
                                 <div class="card-container">
                                     <div class="card">
-                                        <img src="/assets/images/demo/index/engagement.png" alt="increase engagement image" class="w-150">
+                                        <img src="/assets/images/demo/index/engagement.png" alt="Plan 2 Image" class="w-150">
                                         <h3>Increase Engagement</h3>
                                         <p>Engage with your audience and build meaningful connections. RocketSocialBoost helps you boost likes and comments, creating a vibrant community around your content.</p>
                                         <!-- <ul>
@@ -527,7 +534,7 @@
                                         </ul> -->
                                     </div>
                                     <div class="card">
-                                        <img src="/assets/images/demo/index/Credibility.png " alt="gain credibility image" class="w-200">
+                                        <img src="/assets/images/demo/index/Credibility.png " alt="Plan 2 Image" class="w-200">
 
                                         <h3>Gain Credibility</h3>
                                         <p>A strong social media presence signals credibility. Our services can help you gain followers and likes, establishing you as an authority in your niche.</p>
@@ -538,7 +545,7 @@
                                         </ul> -->
                                     </div>
                                     <div class="card">
-                                        <img src="/assets/images/demo/index/Save Time and Effort.png" alt="time and effort image" class="w-150">
+                                        <img src="/assets/images/demo/index/Save Time and Effort.png" alt="Plan 2 Image" class="w-150">
 
                                         <h3>Save Time and Effort</h3>
                                         <p>Let us handle the heavy lifting. With RocketSocialBoost, you can focus on creating great content while we take care of growing your social media presence.</p>
@@ -553,7 +560,10 @@
                             <!-- BOXES ENDS -->
 
                             <!-- SERVICES START -->
-                            <div class="lqd-tabs-content relative  mb-220">
+							<div id="services-cards"></div>
+							<script src="./assets/js/ServicesCards.js" type="text/babel"></script>
+
+                            <!-- <div class="lqd-tabs-content relative  mb-220">
                                 <div id="lqd-tab-pricing-monthly" role="tabpanel" class="lqd-tabs-pane fade active show">
                                     <div class="pt-50 pb-20 px-20 lg:p-0 module-sections ">
                                         <div class="container p-0 ">
@@ -679,132 +689,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="lqd-tab-pricing-annual" role=" tabpanel" class="lqd-tabs-pane fade">
-                                    <div class="pt-50 pb-20 px-20 lg:p-0 module-sections">
-                                        <div class="container p-0">
-                                            <div class="row m-0">
-                                                <div class="co-12 col-md-4 p-0">
-                                                    <div class="module-section mx-20 flex flex-wrap bg-white rounded-10 border-0  border-gray-100 shadow-sm transition-all">
-                                                        <div class="w-full flex flex-col items-center border-bottom  border-gray-100 transition-all pt-15 pb-5 px-35">
-                                                            <div class="mb-20 ld-fancy-heading relative">
-                                                                <p class="font-title text-16 font-bold leading-1 tracking-0 -mb-1em text-amber-600 ld-fh-element inline-block relative">Simple Plan</p>
-                                                            </div>
-                                                            <div class="ld-fancy-heading relative">
-                                                                <h3 class="font-title text-46 font-bold mb-20 ld-fh-element inline-block relative">$10 <small class="font-bold text-13 text-sky-900">/yr</small></h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="module-section-bottom w-full flex flex-col py-30 px-55 items-center text-center">
-                                                            <div class="mb-20 ld-fancy-heading relative lg:text-start">
-                                                                <p class="text-16 leading-1/5em mb-0/5em text-secondary ld-fh-element inline-block relative">Use customer data to build great and solid product </p>
-                                                            </div>
-                                                            <div class="w-full mb-20 -mt-5 iconbox flex flex-grow-1 relative flex-wrap items-center iconbox-circle">
-                                                                <div class="iconbox-icon-wrap mr-15">
-                                                                    <div class="iconbox-icon-container inline-flex relative z-1 rounded-full w-25 h-25 text-14 text-amber-600 bg-amber-100">
-                                                                        <i aria-hidden="true" class="lqd-icn-ess icon-ion-ios-checkmark"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <h3 class="text-14 font-normal m-0 text-secondary lqd-iconbox-heading">99.9 Uptime Guarantee </h3>
-                                                            </div>
-                                                            <div class="w-full mb-20 -mt-5 iconbox flex flex-grow-1 relative flex-wrap items-center iconbox-circle">
-                                                                <div class="iconbox-icon-wrap mr-15">
-                                                                    <div class="iconbox-icon-container inline-flex relative z-1 rounded-full w-25 h-25 text-14 text-amber-600 bg-amber-100">
-                                                                        <i aria-hidden="true" class="lqd-icn-ess icon-ion-ios-checkmark"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <h3 class="text-14 font-normal m-0 text-secondary lqd-iconbox-heading">Unlimited Storage </h3>
-                                                            </div>
-                                                            <a href="#" class="btn btn-solid btn-sm btn-block btn-icon-right btn-hover-reveal text-15 mt-15 rounded-6 font-medium leading-2em bg-red-100 text-amber-600 module-btn-1" target="_blank" rel="nofollow">
-                                                                <span class="btn-txt" data-text="Join Simple Plan">Join Simple Plan</span>
-                                                                <span class="btn-icon">
-                                                                    <i aria-hidden="true" class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="co-12 col-md-4 p-0">
-                                                    <div class="module-section mx-20 flex flex-wrap bg-white rounded-10 border-0  border-gray-100 shadow-sm transition-all">
-                                                        <div class="w-full flex flex-col items-center border-bottom  border-gray-100 transition-all pt-15 pb-5 px-35">
-                                                            <div class="mb-20 ld-fancy-heading relative">
-                                                                <p class="font-title text-16 font-bold leading-1 tracking-0 -mb-1em text-blue-800 ld-fh-element inline-block relative">Standard Plan</p>
-                                                            </div>
-                                                            <div class="ld-fancy-heading relative">
-                                                                <h3 class="font-title text-46 font-bold mb-20 ld-fh-element inline-block relative">$30 <small class="font-bold text-13 text-sky-900">/yr</small></h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="module-section-bottom w-full flex flex-col py-30 px-55 items-center text-center">
-                                                            <div class="mb-20 ld-fancy-heading relative lg:text-start">
-                                                                <p class="text-16 leading-1/5em mb-0/5em text-secondary ld-fh-element inline-block relative">Use customer data to build great and solid product </p>
-                                                            </div>
-                                                            <div class="w-full mb-20 -mt-5 iconbox flex flex-grow-1 relative flex-wrap items-center iconbox-circle">
-                                                                <div class="iconbox-icon-wrap mr-15">
-                                                                    <div class="w-25 h-25 icon-blue iconbox-icon-container inline-flex relative z-1 rounded-full text-14 text-blue-800 bg-blue-100">
-                                                                        <i aria-hidden="true" class="lqd-icn-ess icon-ion-ios-checkmark"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <h3 class="text-14 font-normal m-0 text-secondary lqd-iconbox-heading">99.9 Uptime Guarantee </h3>
-                                                            </div>
-                                                            <div class="w-full mb-20 -mt-5 iconbox flex flex-grow-1 relative flex-wrap items-center iconbox-circle">
-                                                                <div class="iconbox-icon-wrap mr-15">
-                                                                    <div class="w-25 h-25 icon-blue iconbox-icon-container inline-flex relative z-1 rounded-full text-14 text-blue-800 bg-blue-100">
-                                                                        <i aria-hidden="true" class="lqd-icn-ess icon-ion-ios-checkmark"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <h3 class="text-14 font-normal m-0 text-secondary lqd-iconbox-heading">Unlimited Storage </h3>
-                                                            </div>
-                                                            <a href="#" class="btn btn-solid btn-sm btn-block btn-icon-right btn-hover-reveal text-15 mt-15 rounded-6 font-medium leading-2em text-white bg-blue-500 module-btn-2" target="_blank" rel="nofollow">
-                                                                <span class="btn-txt" data-text="Join Standard Plan">Join Standard Plan</span>
-                                                                <span class="btn-icon">
-                                                                    <i aria-hidden="true" class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="co-12 col-md-4 p-0">
-                                                    <div class="module-section mx-20 flex flex-wrap bg-white rounded-10 border-0  border-gray-100 shadow-sm transition-all">
-                                                        <div class="w-full flex flex-col items-center border-bottom  border-gray-100 transition-all pt-15 pb-5 px-35">
-                                                            <div class="mb-20 ld-fancy-heading relative">
-                                                                <p class="font-title text-16 font-bold leading-1 tracking-0 -mb-1em text-emerlad-500 ld-fh-element inline-block relative">Premium Plan</p>
-                                                            </div>
-                                                            <div class="ld-fancy-heading relative">
-                                                                <h3 class="font-title text-46 font-bold mb-20 ld-fh-element inline-block relative">$40 <small class="font-bold text-13 text-sky-900">/yr</small></h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="module-section-bottom w-full flex flex-col py-30 px-55 items-center text-center">
-                                                            <div class="mb-20 ld-fancy-heading relative lg:text-start">
-                                                                <p class="text-16 leading-1/5em mb-0/5em text-secondary ld-fh-element inline-block relative">Use customer data to build great and solid product </p>
-                                                            </div>
-                                                            <div class="w-full mb-20 -mt-5 iconbox flex flex-grow-1 relative flex-wrap items-center iconbox-circle">
-                                                                <div class="iconbox-icon-wrap mr-15">
-                                                                    <div class="w-25 h-25 icon-green iconbox-icon-container inline-flex relative z-1 rounded-full text-14 text-emerlad-500 bg-green-100">
-                                                                        <i aria-hidden="true" class="lqd-icn-ess icon-ion-ios-checkmark"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <h3 class="text-14 font-normal m-0 text-secondary lqd-iconbox-heading">99.9 Uptime Guarantee </h3>
-                                                            </div>
-                                                            <div class="w-full mb-20 -mt-5 iconbox flex flex-grow-1 relative flex-wrap items-center iconbox-circle">
-                                                                <div class="iconbox-icon-wrap mr-15">
-                                                                    <div class="w-25 h-25 icon-green iconbox-icon-container inline-flex relative z-1 rounded-full text-14 text-emerlad-500 bg-green-100">
-                                                                        <i aria-hidden="true" class="lqd-icn-ess icon-ion-ios-checkmark"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <h3 class="text-14 font-normal m-0 text-secondary lqd-iconbox-heading">Unlimited Storage </h3>
-                                                            </div>
-                                                            <a href="#" class="btn btn-solid btn-sm btn-block btn-icon-right btn-hover-reveal text-15 mt-15 rounded-6 font-medium leading-2em bg-green-100 text-emerlad-500 module-btn-3" target="_blank" rel="nofollow">
-                                                                <span class="btn-txt" data-text="Join Premium Plan">Join Premium Plan</span>
-                                                                <span class="btn-icon">
-                                                                    <i aria-hidden="true" class="lqd-icn-ess icon-md-arrow-forward"></i>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> -->
                             <!-- SERVICES ENDS -->
 
 							<!-- Get In Touch  Start -->
@@ -1236,7 +1121,7 @@
 		<script src="./assets/js/theme.min.js"></script>
 		<script src="./assets/js/liquid-ajax-contact-form.min.js"></script>
 		<script src="./assets/js/search-input.js"></script>
-		<script>
+		<!-- <script>
 			const services = document.querySelectorAll('.services');
 
 function animateServices() {
@@ -1266,7 +1151,7 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 		</script>
-		
+		 -->
 
 		<!-- Start custom cursor -->
 		<div class="lqd-cc lqd-cc--inner fixed pointer-events-none"></div>

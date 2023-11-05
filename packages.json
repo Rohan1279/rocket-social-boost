@@ -1,0 +1,102 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "package_name": "Test package",
+      "description": "",
+      "min_amount": 0,
+      "max_amount": 0,
+      "price_per_thousand": 0,
+      "price": 2500,
+      "is_subscribable": 1,
+      "status": 1,
+      "subscription_days": 20,
+      "created_at": "2023-10-23T16:48:10.000000Z",
+      "updated_at": "2023-10-23T16:48:10.000000Z"
+    },
+    {
+      "id": 2,
+      "package_name": "Test package",
+      "description": "",
+      "min_amount": 0,
+      "max_amount": 0,
+      "price_per_thousand": 0,
+      "price": 2500,
+      "is_subscribable": 1,
+      "status": 1,
+      "subscription_days": 20,
+      "created_at": "2023-10-23T16:48:59.000000Z",
+      "updated_at": "2023-10-23T16:48:59.000000Z"
+    },
+    {
+      "id": 3,
+      "package_name": "Test package",
+      "description": "",
+      "min_amount": 0,
+      "max_amount": 0,
+      "price_per_thousand": 0,
+      "price": 2500,
+      "is_subscribable": 1,
+      "status": 1,
+      "subscription_days": 20,
+      "created_at": "2023-10-23T16:50:00.000000Z",
+      "updated_at": "2023-10-23T16:50:00.000000Z"
+    },
+    {
+      "id": 4,
+      "package_name": "Test package",
+      "description": "",
+      "min_amount": 0,
+      "max_amount": 0,
+      "price_per_thousand": 0,
+      "price": 2500,
+      "is_subscribable": 1,
+      "status": 1,
+      "subscription_days": 20,
+      "created_at": "2023-10-23T16:50:07.000000Z",
+      "updated_at": "2023-10-23T16:50:07.000000Z"
+    },
+    {
+      "id": 5,
+      "package_name": "Test package",
+      "description": "",
+      "min_amount": 0,
+      "max_amount": 0,
+      "price_per_thousand": 0,
+      "price": 2500,
+      "is_subscribable": 1,
+      "status": 1,
+      "subscription_days": 20,
+      "created_at": "2023-10-23T16:53:07.000000Z",
+      "updated_at": "2023-10-23T16:53:07.000000Z"
+    },
+    {
+      "id": 6,
+      "package_name": "Test package",
+      "description": "",
+      "min_amount": 0,
+      "max_amount": 0,
+      "price_per_thousand": 0,
+      "price": 2500,
+      "is_subscribable": 1,
+      "status": 1,
+      "subscription_days": 20,
+      "created_at": "2023-10-23T16:54:01.000000Z",
+      "updated_at": "2023-10-23T16:54:01.000000Z"
+    },
+    {
+      "id": 7,
+      "package_name": "Test package",
+      "description": "",
+      "min_amount": 0,
+      "max_amount": 0,
+      "price_per_thousand": 0,
+      "price": 2500,
+      "is_subscribable": 1,
+      "status": 1,
+      "subscription_days": 20,
+      "created_at": "2023-10-23T16:54:12.000000Z",
+      "updated_at": "2023-10-23T16:54:12.000000Z"
+    }
+  ]
+}
